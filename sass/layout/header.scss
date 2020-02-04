@@ -1,0 +1,81 @@
+.site-header {
+	@include background(--header-background-color);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.header-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Site Branding */
+.site-branding {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.site-branding a:link,
+.site-branding a:visited,
+.site-branding a:hover {
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+
+.site-branding .custom-logo {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: top;
+}
+
+.site-title {
+	margin: 0;
+	padding: 0;
+	@include color(--header-text-color);
+	text-decoration: none;
+	@include font-size(24);
+	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
+	@include text-transform(--navi-text-transform);
+	line-height: 1.4;
+}
+
+.site-title a:link,
+.site-title a:visited {
+	@include color(--header-text-color);
+}
+
+.site-title a:hover,
+.site-title a:active {
+	@include color(--header-text-hover-color);
+}
+
+.site-description {
+	display: block;
+	margin: 0;
+	padding: 0;
+	@include color(--header-text-color);
+	@include font-size(13);
+}
+
+/* Custom Header Image */
+.header-image {
+	margin: 0;
+	text-align: center;
+}
+
+.header-image img,
+.header-image .wp-post-image {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}

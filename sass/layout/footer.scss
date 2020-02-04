@@ -1,0 +1,95 @@
+.site-footer {
+	padding-top: 1.5rem;
+	padding-bottom: 1px;
+	@include font-size(17);
+	@include color(--footer-text-color);
+	@include background(--footer-background-color);
+}
+
+.site-footer a:link,
+.site-footer a:visited {
+	@include color(--footer-link-color);
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+	@include color(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"],
+.site-footer input[type="email"],
+.site-footer input[type="url"],
+.site-footer input[type="password"],
+.site-footer input[type="search"],
+.site-footer input[type="submit"],
+.site-footer textarea {
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border: 2px solid var(--footer-border-color);
+	@include color(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"]:focus,
+.site-footer input[type="email"]:focus,
+.site-footer input[type="url"]:focus,
+.site-footer input[type="password"]:focus,
+.site-footer input[type="search"]:focus,
+.site-footer textarea:focus {
+	@include color(--footer-text-color);
+}
+
+.site-footer button,
+.site-footer input[type="button"],
+.site-footer input[type="reset"],
+.site-footer input[type="submit"] {
+	@include color(--footer-link-hover-color);
+}
+
+.site-footer button:hover,
+.site-footer input[type="button"]:hover,
+.site-footer input[type="reset"]:hover,
+.site-footer input[type="submit"]:hover,
+.site-footer button:focus,
+.site-footer input[type="button"]:focus,
+.site-footer input[type="reset"]:focus,
+.site-footer input[type="submit"]:focus,
+.site-footer button:active,
+.site-footer input[type="button"]:active,
+.site-footer input[type="reset"]:active,
+.site-footer input[type="submit"]:active {
+	@include color(--footer-border-color);
+}
+
+/* Footer Widgets */
+.footer-widgets .widget {
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-title {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	@include color(--footer-link-color);
+	@include font-size(20);
+	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
+	@include text-transform(--navi-text-transform);
+}
+
+.footer-widgets .widget ul li a {
+	text-decoration: none;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+	margin-bottom: 1.25rem;
+	padding-top: 1.25rem;
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	border-top: 2px solid var(--footer-border-color);
+}
+
+.footer-copyright .widget {
+	margin: 0;
+}
+
+.footer-copyright .widget-title {
+	margin-top: 0;
+}

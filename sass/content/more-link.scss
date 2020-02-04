@@ -1,0 +1,21 @@
+/* Read More Button */
+.more-link {
+	display: inline-block;
+	padding: 0.6em 1.2em;
+	@include color(--button-color);
+	border: 2px solid currentColor;
+	@include font-size(14);
+	font-weight: bold;
+}
+
+.more-link:link,
+.more-link:visited {
+	@include color(--button-color);
+	text-decoration: none;
+}
+
+.more-link:hover,
+.more-link:active {
+	@include color(--button-hover-color);
+	text-decoration: none;
+}

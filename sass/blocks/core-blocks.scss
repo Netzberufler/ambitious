@@ -1,0 +1,116 @@
+/* Button Block */
+.wp-block-button__link:link,
+.wp-block-button__link:visited {
+	text-decoration: none;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:active {
+	text-decoration: underline;
+}
+
+/* Image Block */
+.wp-block-image {
+	margin-bottom: 1.5em;
+
+	img {
+		vertical-align: top;
+	}
+}
+
+/* Media Text Block */
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
+/* Cover Block */
+.wp-block-cover {
+	display: flex;
+}
+
+.wp-block-cover-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	@include font-size(32);
+}
+
+.wp-block-cover.alignwide,
+.wp-block-cover.alignfull {
+    width: auto;
+}
+
+/* Separator Block */
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 120px;
+	height: 4px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+/* Video Embed Block */
+.wp-block-embed-vimeo.alignfull iframe {
+	width: 100%;
+}
+
+/* Quote Block */
+.wp-block-quote.is-style-large {
+	border: none;
+	margin: 0 0 1.5em;
+	padding: 0;
+	@include font-size(24);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+.wp-block-quote.is-style-large p {
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+}
+
+.wp-block-quote.is-style-large cite {
+	text-align: inherit;
+	@include font-family(--text-font);
+}
+
+/* Pullquote Block */
+.wp-block-pullquote {
+	margin-bottom: 1.5em;
+	padding: 1.5em 0;
+	border-bottom: 4px solid rgba(0,0,0,0.15);
+	border-top: 4px solid rgba(0,0,0,0.15);
+}
+
+.wp-block-pullquote blockquote {
+	border: none;
+	margin: 0;
+	padding: 0;
+	@include font-size(24);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+.wp-block-pullquote p {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.wp-block-pullquote blockquote cite {
+	color: $textColor;
+	@include font-family(--text-font);
+	font-style: normal;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote {
+    max-width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote p {
+	margin-bottom: 0.75em;
+	font-size: inherit;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote cite {
+	color: inherit;
+}

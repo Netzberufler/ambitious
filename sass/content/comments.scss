@@ -1,0 +1,34 @@
+/* Comments */
+.comment-list {
+	list-style: none;
+	padding: 0;
+
+	.comment {
+		margin-bottom: 1.5rem;
+
+		.comment-author {
+			font-size: 120%;
+		}
+
+		.comment-meta {
+			font-size: 80%;
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	.bypostauthor {
+		.comment-author .fn {
+			font-weight: bold;
+		}
+	}
+
+	.children {
+		list-style: none;
+	}
+}
+
+.comment-form {
+	label {
+		display: block;
+	}
+}

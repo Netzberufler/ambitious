@@ -1,0 +1,191 @@
+.primary-navigation {
+	position: relative;
+	width: 100%;
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	@include color(--header-text-color);
+	list-style: none;
+	@include font-size(17);
+	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
+	@include text-transform(--navi-text-transform);
+}
+
+.main-navigation > ul {
+	margin-top: 1.5rem;
+}
+
+/* Hide the menu on small screens when JavaScript is available. */
+.main-navigation ul,
+.main-navigation .menu-item-has-children > a > .icon,
+.main-navigation .page_item_has_children > a > .icon,
+.main-navigation ul a > .icon {
+	display: none;
+}
+
+.main-navigation.toggled-on > ul.menu {
+	display: block;
+}
+
+/* Menu Items Styling */
+.main-navigation ul li {
+	position: relative;
+	margin: 0;
+}
+
+.main-navigation ul a {
+	display: block;
+	margin: 0;
+	padding: 1rem;
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	border-top: 2px solid var(--header-border-color);
+	text-decoration: none;
+}
+
+.main-navigation ul a:link,
+.main-navigation ul a:visited {
+	@include color(--header-text-color);
+	text-decoration: none;
+}
+
+.main-navigation ul a:hover,
+.main-navigation ul a:active,
+.main-navigation ul a:focus {
+	@include color(--header-text-hover-color);
+}
+
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: underline;
+}
+
+/* Submenus */
+.main-navigation ul ul {
+	@include font-size(16);
+	@include background(--header-background-color);
+}
+
+.main-navigation ul ul.toggled-on {
+	display: block;
+}
+
+.main-navigation ul ul a {
+	padding-left: 2rem;
+}
+
+.main-navigation ul ul ul a {
+	padding-left: 4rem;
+}
+
+.main-navigation ul ul ul ul a {
+	padding-left: 6rem;
+}
+
+/* Main Navigation Toggle */
+.menu-toggle {
+	display: block;
+	margin: 0;
+	margin-left: auto;
+	padding: 1rem;
+	border: none;
+	background: none;
+	@include color(--header-text-color);
+	text-decoration: none;
+	@include font-size(17);
+	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
+	@include text-transform(--navi-text-transform);
+	text-align: left;
+}
+
+.menu-toggle .menu-toggle-text {
+	display: none;
+}
+
+.menu-toggle:focus {
+	outline: thin dotted;
+	@include color(--header-text-color);
+	background: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:active {
+	@include color(--header-text-hover-color);
+	background: none;
+	cursor: pointer;
+}
+
+.menu-toggle .icon {
+	margin: 0;
+	width: 28px;
+	height: 28px;
+	vertical-align: top;
+	@include fill(--header-text-color);
+}
+
+.menu-toggle:hover .icon,
+.menu-toggle:active .icon {
+	@include fill(--header-text-hover-color);
+}
+
+.toggled-on .menu-toggle .icon-menu,
+.menu-toggle .icon-close {
+	display: none;
+}
+
+.toggled-on .menu-toggle .icon-close {
+	display: inline-block;
+}
+
+/* Submenu Dropdown Toggles */
+.dropdown-toggle {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	padding: 1.1rem 1.5rem;
+	background: none;
+	border: none;
+}
+
+.dropdown-toggle:focus {
+	outline: thin dotted;
+	@include color(--header-text-color);
+	background: none;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active {
+	background: none;
+}
+
+.dropdown-toggle .icon {
+	margin: 0.35em 0 0;
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+	@include fill(--header-text-color);
+}
+
+.dropdown-toggle:hover .icon,
+.dropdown-toggle:active .icon,
+.dropdown-toggle:focus .icon {
+	@include fill(--header-text-hover-color);
+}
+
+.dropdown-toggle.toggled-on .icon {
+	-ms-transform: rotate(-180deg); /* IE 9 */
+	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+	transform: rotate(-180deg);
+}
+
+.main-navigation ul ul .dropdown-toggle {
+	padding: 1rem 1.2rem;
+}
+
+.main-navigation ul ul .dropdown-toggle .icon {
+	width: 18px;
+	height: 18px;
+}

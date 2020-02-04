@@ -1,0 +1,73 @@
+/* Block Text Colors */
+.has-primary-color {
+	@include color(--primary-color);
+}
+
+.has-secondary-color {
+	@include color(--secondary-color);
+}
+
+.has-accent-color {
+	@include color(--accent-color);
+}
+
+.has-highlight-color {
+	@include color(--highlight-color);
+}
+
+.has-white-color {
+	color: #ffffff;
+}
+
+.has-light-gray-color {
+	@include color(--light-gray-color);
+}
+
+.has-gray-color {
+	@include color(--gray-color);
+}
+
+.has-dark-gray-color {
+	@include color(--dark-gray-color);
+}
+
+.has-black-color {
+	color: #000000;
+}
+
+/* Block Background Colors */
+.has-primary-background-color {
+	@include background(--primary-color);
+}
+
+.has-secondary-background-color {
+	@include background(--secondary-color);
+}
+
+.has-accent-background-color {
+	@include background(--accent-color);
+}
+
+.has-highlight-background-color {
+	@include background(--highlight-color);
+}
+
+.has-white-background-color {
+	background-color: #ffffff;
+}
+
+.has-light-gray-background-color {
+	@include background(--light-gray-color);
+}
+
+.has-gray-background-color {
+	@include background(--gray-color);
+}
+
+.has-dark-gray-background-color {
+	@include background(--dark-gray-color);
+}
+
+.has-black-background-color {
+	background-color: #000000;
+}

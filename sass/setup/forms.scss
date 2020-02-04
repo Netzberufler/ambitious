@@ -1,0 +1,95 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	margin: 0;
+	padding: 0.6em 1.2em;
+	background: none;
+	@include color(--button-color);
+	border: 2px solid currentColor;
+	text-decoration: none;
+	font-weight: bold;
+	@include font-size(15);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	@include color(--button-hover-color);
+	text-decoration: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	padding: 0.3em 0.6em;
+	max-width: 100%;
+	border: 2px solid rgba(0,0,0,0.1);
+	background: none;
+	color: #777;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	border: 2px solid rgba(0,0,0,0.3);
+	color: $textColor;
+	outline: none;
+}
+
+textarea {
+	width: 100%;
+}
+
+/* Search Form */
+/* Theme Search Widget */
+.search-form {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.search-form label {
+	flex-grow: 1;
+}
+
+.search-form .screen-reader-text {
+	display: none;
+}
+
+.search-form .search-field {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0.6em 1em;
+	min-width: 150px;
+	width: 100%;
+	-webkit-appearance: none;
+}
+
+.search-form .search-submit {
+	display: flex;
+	margin-left: 0.5rem;
+	padding: 0.6em 0.8em;
+}
+
+.search-form .search-submit .icon-search {
+	width: 22px;
+	height: 22px;
+	fill: currentColor;
+}

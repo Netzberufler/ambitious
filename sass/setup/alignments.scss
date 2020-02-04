@@ -1,0 +1,11 @@
+.alignleft,
+.alignright,
+.aligncenter {
+	display: block;
+}
+
+.aligncenter {
+	clear: both;
+	margin-right: auto;
+	margin-left: auto;
+}

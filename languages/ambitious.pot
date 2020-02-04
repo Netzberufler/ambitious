@@ -1,0 +1,535 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ambitious\n"
+"Report-Msgid-Bugs-To: https://themezee.com/\n"
+"POT-Creation-Date: 2019-12-11 19:10+0100\n"
+"PO-Revision-Date: 2016-09-15 21:02+0100\n"
+"Last-Translator: \n"
+"Language-Team: GermanThemes <support@germanthemes.de>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "404: Page not found"
+msgstr ""
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try a search or one "
+"of the links below?"
+msgstr ""
+
+#: comments.php:33
+msgid "One comment"
+msgstr ""
+
+#: comments.php:36
+#, php-format
+msgid "%s comments"
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:46
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:118
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:119
+msgid "Collapse child menu"
+msgstr ""
+
+#: functions.php:145
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:147
+msgctxt "widget area description"
+msgid "Appears on blog pages and single posts."
+msgstr ""
+
+#: functions.php:156
+msgid "Footer Column 1"
+msgstr ""
+
+#: functions.php:158
+msgctxt "widget area description"
+msgid "Appears in the first column in footer."
+msgstr ""
+
+#: functions.php:167
+msgid "Footer Column 2"
+msgstr ""
+
+#: functions.php:169
+msgctxt "widget area description"
+msgid "Appears in the second column in footer."
+msgstr ""
+
+#: functions.php:178
+msgid "Footer Column 3"
+msgstr ""
+
+#: functions.php:180
+msgctxt "widget area description"
+msgid "Appears in the third column in footer."
+msgstr ""
+
+#: functions.php:189
+msgid "Footer Column 4"
+msgstr ""
+
+#: functions.php:191
+msgctxt "widget area description"
+msgid "Appears in the fourth column in footer."
+msgstr ""
+
+#: functions.php:200
+msgid "Footer Copyright"
+msgstr ""
+
+#: functions.php:202
+msgctxt "widget area description"
+msgid "Appears in the bottom footer line."
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: inc/back-compat.php:42 inc/back-compat.php:52 inc/back-compat.php:65
+#, php-format
+msgid ""
+"%1$s requires at least WordPress version %2$s. You are running version %3$s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/customizer/controls/font-control.php:51
+msgid "Previous Font"
+msgstr ""
+
+#: inc/customizer/controls/font-control.php:52
+msgid "Next Font"
+msgstr ""
+
+#: inc/customizer/controls/font-control.php:53
+msgctxt "default font button"
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:25
+msgid "Theme Links"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:28
+msgid "https://germanthemes.de/en/themes/ambitious/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:29
+msgid "Theme Page"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:35
+msgid "Theme Demo"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:40
+msgid "https://germanthemes.de/en/docs/ambitious-documentation/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:41
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:46
+msgid "https://wordpress.org/support/theme/ambitious/reviews/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:47
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/customizer/controls/plugin-control.php:33
+msgid "Install Plugin"
+msgstr ""
+
+#: inc/customizer/customizer.php:37
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/customizer.php:42
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:17
+msgid "Block Colors"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:34
+msgctxt "Color Option"
+msgid "Primary"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:50
+msgctxt "Color Option"
+msgid "Secondary"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:66
+msgctxt "Color Option"
+msgid "Accent"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:82
+msgctxt "Color Option"
+msgid "Highlight"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:98
+msgctxt "Color Option"
+msgid "Light Gray"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:114
+msgctxt "Color Option"
+msgid "Gray"
+msgstr ""
+
+#: inc/customizer/sections/block-color-settings.php:130
+msgctxt "Color Option"
+msgid "Dark Gray"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:17
+msgid "Blog Settings"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:34
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:52
+msgid "Post Details"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:68
+msgid "Display date"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:84
+msgid "Display author"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:100
+msgid "Display categories"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:110
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:126
+msgid "Display tags"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:17
+msgid "Theme Colors"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:34
+msgctxt "Color Option"
+msgid "Links"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:50
+msgctxt "Color Option"
+msgid "Link Hover"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:66
+msgctxt "Color Option"
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:82
+msgctxt "Color Option"
+msgid "Titles"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:98
+msgctxt "Color Option"
+msgid "Title Hover"
+msgstr ""
+
+#: inc/customizer/sections/theme-color-settings.php:114
+msgctxt "Color Option"
+msgid "Footer Widgets"
+msgstr ""
+
+#: inc/customizer/sections/theme-info-settings.php:19
+msgid "Theme Info"
+msgstr ""
+
+#: inc/customizer/sections/theme-info-settings.php:37
+msgid "GT Blocks"
+msgstr ""
+
+#: inc/customizer/sections/theme-info-settings.php:38
+msgid ""
+"Install our free GT Blocks plugin to create a business-styled homepage in "
+"the Editor with just a few clicks."
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:19
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:37
+msgid "Body Font"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:54
+msgctxt "Font Setting"
+msgid "Headings"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:70
+#: inc/customizer/sections/typography-settings.php:119
+msgctxt "Font Setting"
+msgid "Bold"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:86
+#: inc/customizer/sections/typography-settings.php:135
+msgctxt "Font Setting"
+msgid "Uppercase"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:103
+msgctxt "Font Setting"
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:146
+msgid "More Fonts"
+msgstr ""
+
+#: inc/customizer/sections/typography-settings.php:147
+msgid ""
+"You can install the GT Local Fonts plugin to extend the typography options "
+"with additional local GDPR-compatible fonts."
+msgstr ""
+
+#: inc/customizer/sections/website-settings.php:40
+msgid "Display Site Title"
+msgstr ""
+
+#: inc/customizer/sections/website-settings.php:56
+msgid "Display Tagline"
+msgstr ""
+
+#: inc/gutenberg.php:25
+msgctxt "block color"
+msgid "Primary"
+msgstr ""
+
+#: inc/gutenberg.php:30
+msgctxt "block color"
+msgid "Secondary"
+msgstr ""
+
+#: inc/gutenberg.php:35
+msgctxt "block color"
+msgid "Accent"
+msgstr ""
+
+#: inc/gutenberg.php:40
+msgctxt "block color"
+msgid "Highlight"
+msgstr ""
+
+#: inc/gutenberg.php:45
+msgctxt "block color"
+msgid "White"
+msgstr ""
+
+#: inc/gutenberg.php:50
+msgctxt "block color"
+msgid "Light Gray"
+msgstr ""
+
+#: inc/gutenberg.php:55
+msgctxt "block color"
+msgid "Gray"
+msgstr ""
+
+#: inc/gutenberg.php:60
+msgctxt "block color"
+msgid "Dark Gray"
+msgstr ""
+
+#: inc/gutenberg.php:65
+msgctxt "block color"
+msgid "Black"
+msgstr ""
+
+#: inc/gutenberg.php:74
+msgctxt "block font size"
+msgid "Small"
+msgstr ""
+
+#: inc/gutenberg.php:79
+msgctxt "block font size"
+msgid "Medium"
+msgstr ""
+
+#: inc/gutenberg.php:84
+msgctxt "block font size"
+msgid "Large"
+msgstr ""
+
+#: inc/gutenberg.php:89
+msgctxt "block font size"
+msgid "Extra Large"
+msgstr ""
+
+#: inc/gutenberg.php:94
+msgctxt "block font size"
+msgid "Huge"
+msgstr ""
+
+#: inc/gutenberg.php:118
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/gutenberg.php:119
+msgid "Page Options"
+msgstr ""
+
+#: inc/gutenberg.php:120
+msgid "Page Layout"
+msgstr ""
+
+#: inc/gutenberg.php:121
+msgid "Default"
+msgstr ""
+
+#: inc/gutenberg.php:122
+msgid "Full-width"
+msgstr ""
+
+#: inc/gutenberg.php:123
+msgid "Hide title?"
+msgstr ""
+
+#: inc/gutenberg.php:124
+msgid "Remove bottom margin?"
+msgstr ""
+
+#: inc/template-tags.php:113
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/template-tags.php:192
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:210
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/template-tags.php:216
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:238
+#, php-format
+msgctxt "post category"
+msgid "in %s"
+msgstr ""
+
+#: inc/template-tags.php:253
+msgid "Tags: "
+msgstr ""
+
+#: inc/template-tags.php:271
+msgctxt "pagination"
+msgid "Previous Posts"
+msgstr ""
+
+#: inc/template-tags.php:272
+msgctxt "pagination"
+msgid "Next Posts"
+msgstr ""
+
+#: searchform.php:13 searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:21
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/header/site-navigation.php:17
+msgid "Menu"
+msgstr ""
+
+#: template-parts/header/site-navigation.php:22
+msgid "Primary Menu"
+msgstr ""
+
+#: template-parts/page/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/page/content-none.php:23
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/page/content-none.php:27
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/page/content-none.php:32
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/post/content.php:24
+msgid "Continue reading"
+msgstr ""

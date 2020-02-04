@@ -1,0 +1,115 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote {
+	margin: 0 0 1.5em;
+	padding-left: 1.5em;
+	border-left: 4px solid $textColor;
+	color: rgba(0,0,0,0.5);
+	@include font-size(18);
+}
+
+blockquote p {
+	margin-bottom: 0.75em;
+}
+
+blockquote cite {
+	display: block;
+	color: $textColor;
+	@include font-size(16);
+}
+
+blockquote cite:before {
+	content: "\2014\00a0";
+}
+
+hr {
+	margin-bottom: 1.5em;
+	height: 1px;
+	border: 0;
+	background-color: rgba(0,0,0,0.15);
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em;
+	padding: 0 0 0 1.25em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 1.5em;
+}
+
+ul ul,
+ol ul {
+	list-style-type: circle;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 1.5em;
+}
+
+img {
+	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	border: none;
+	table-layout: fixed;
+}
+
+th,
+td {
+	padding: 0.4em 0.6em;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+
+a {
+	@include color(--link-color);
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+	@include color(--link-hover-color);
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}

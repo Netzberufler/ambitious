@@ -1,0 +1,14 @@
+/* GT Section Block */
+.gt-background-section .gt-section-content {
+	&.gt-default-width {
+		max-width: $contentWidth;
+	}
+
+	&.gt-wide-width {
+		max-width: $wideBlockWidth;
+	}
+
+	&.gt-full-width {
+		max-width: $contentFullwidth;
+	}
+}
