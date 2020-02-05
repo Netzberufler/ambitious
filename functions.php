@@ -6,15 +6,6 @@
  */
 
 /**
- * Ambitious only works in WordPress 5.2 or later.
- */
-if ( version_compare( $GLOBALS['wp_version'], '5.2', '<' ) ) {
-	require get_template_directory() . '/inc/back-compat.php';
-	return;
-}
-
-
-/**
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
@@ -214,7 +205,6 @@ add_action( 'widgets_init', 'ambitious_widgets_init' );
  */
 
 // Include Customizer Options.
-require get_template_directory() . '/inc/customizer/customizer.php';
 require get_template_directory() . '/inc/customizer/default-options.php';
 
 // Include SVG Icon Functions.
@@ -228,7 +218,3 @@ require get_template_directory() . '/inc/template-tags.php';
 
 // Include Gutenberg Features.
 require get_template_directory() . '/inc/gutenberg.php';
-
-// Include Customization Features.
-require get_template_directory() . '/inc/custom-colors.php';
-require get_template_directory() . '/inc/custom-fonts.php';
