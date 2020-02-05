@@ -201,11 +201,129 @@ add_action( 'widgets_init', 'ambitious_widgets_init' );
 
 
 /**
+ * Registers support for various Gutenberg features.
+ *
+ * @return void
+ */
+function ambitious_gutenberg_support() {
+
+	// Add theme support for wide and full images.
+	add_theme_support( 'align-wide' );
+
+	// Add theme support for block color palette.
+	add_theme_support( 'editor-color-palette', apply_filters( 'ambitious_editor_color_palette_args', array(
+		array(
+			'name'  => esc_html_x( 'Primary', 'block color', 'ambitious' ),
+			'slug'  => 'primary',
+			'color' => '#003344',
+		),
+		array(
+			'name'  => esc_html_x( 'Secondary', 'block color', 'ambitious' ),
+			'slug'  => 'secondary',
+			'color' => '#268f97',
+		),
+		array(
+			'name'  => esc_html_x( 'Accent', 'block color', 'ambitious' ),
+			'slug'  => 'accent',
+			'color' => '#c9493b',
+		),
+		array(
+			'name'  => esc_html_x( 'Highlight', 'block color', 'ambitious' ),
+			'slug'  => 'highlight',
+			'color' => '#f9d26e',
+		),
+		array(
+			'name'  => esc_html_x( 'White', 'block color', 'ambitious' ),
+			'slug'  => 'white',
+			'color' => '#ffffff',
+		),
+		array(
+			'name'  => esc_html_x( 'Light Gray', 'block color', 'ambitious' ),
+			'slug'  => 'light-gray',
+			'color' => '#e4e4e4',
+		),
+		array(
+			'name'  => esc_html_x( 'Gray', 'block color', 'ambitious' ),
+			'slug'  => 'gray',
+			'color' => '#848484',
+		),
+		array(
+			'name'  => esc_html_x( 'Dark Gray', 'block color', 'ambitious' ),
+			'slug'  => 'dark-gray',
+			'color' => '#242424',
+		),
+		array(
+			'name'  => esc_html_x( 'Black', 'block color', 'ambitious' ),
+			'slug'  => 'black',
+			'color' => '#000000',
+		),
+	) ) );
+
+	// Add theme support for font sizes.
+	add_theme_support( 'editor-font-sizes', apply_filters( 'ambitious_editor_font_sizes_args', array(
+		array(
+			'name' => esc_html_x( 'Small', 'block font size', 'ambitious' ),
+			'size' => 16,
+			'slug' => 'small',
+		),
+		array(
+			'name' => esc_html_x( 'Medium', 'block font size', 'ambitious' ),
+			'size' => 24,
+			'slug' => 'medium',
+		),
+		array(
+			'name' => esc_html_x( 'Large', 'block font size', 'ambitious' ),
+			'size' => 36,
+			'slug' => 'large',
+		),
+		array(
+			'name' => esc_html_x( 'Extra Large', 'block font size', 'ambitious' ),
+			'size' => 48,
+			'slug' => 'extra-large',
+		),
+		array(
+			'name' => esc_html_x( 'Huge', 'block font size', 'ambitious' ),
+			'size' => 64,
+			'slug' => 'huge',
+		),
+	) ) );
+}
+add_action( 'after_setup_theme', 'ambitious_gutenberg_support' );
+
+
+/**
+ * Enqueue block styles and scripts for Gutenberg Editor.
+ */
+function ambitious_block_editor_assets() {
+
+	// Get Theme Version.
+	$theme_version = wp_get_theme()->get( 'Version' );
+
+	// Enqueue Editor Styling.
+	wp_enqueue_style( 'ambitious-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
+}
+add_action( 'enqueue_block_editor_assets', 'ambitious_block_editor_assets' );
+
+
+/**
+ * Remove inline styling in Gutenberg.
+ *
+ * @return array $editor_settings
+ */
+function ambitious_block_editor_settings( $editor_settings ) {
+	// Remove editor styling.
+	if ( ! current_theme_supports( 'editor-styles' ) ) {
+		$editor_settings['styles'] = '';
+	}
+
+	return $editor_settings;
+}
+add_filter( 'block_editor_settings', 'ambitious_block_editor_settings', 11 );
+
+
+/**
  * Include Files
  */
-
-// Include Customizer Options.
-require get_template_directory() . '/inc/customizer/default-options.php';
 
 // Include SVG Icon Functions.
 require get_template_directory() . '/inc/icons.php';
@@ -215,6 +333,3 @@ require get_template_directory() . '/inc/template-functions.php';
 
 // Include Template Tags.
 require get_template_directory() . '/inc/template-tags.php';
-
-// Include Gutenberg Features.
-require get_template_directory() . '/inc/gutenberg.php';
