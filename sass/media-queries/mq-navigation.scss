@@ -23,6 +23,11 @@
 		align-items: center;
 	}
 
+	/* Override Core Column Block CSS */
+	.primary-navigation.wp-block-column:nth-child(n) {
+		margin-left: auto;
+	}
+
 	#masthead .main-navigation > ul.menu {
 		display: -webkit-box;
 		display: -ms-flexbox;

@@ -723,6 +723,7 @@ textarea {
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0;
 }
 
 /* Site Branding */
@@ -733,6 +734,8 @@ textarea {
 	max-width: 100%;
 	flex-direction: column;
 	justify-content: center;
+	flex-basis: auto;
+	flex-grow: 0;
 }
 
 .site-branding a:link,
@@ -811,6 +814,13 @@ textarea {
 .primary-navigation {
 	position: relative;
 	width: 100%;
+	flex-basis: auto;
+	flex-grow: 0;
+}
+
+/* Override Core Column Block CSS */
+.primary-navigation.wp-block-column:nth-child(n) {
+	margin-left: 0;
 }
 
 .main-navigation ul {
@@ -2133,6 +2143,11 @@ object {
 		margin-left: auto;
 		width: auto;
 		align-items: center;
+	}
+
+	/* Override Core Column Block CSS */
+	.primary-navigation.wp-block-column:nth-child(n) {
+		margin-left: auto;
 	}
 
 	#masthead .main-navigation > ul.menu {

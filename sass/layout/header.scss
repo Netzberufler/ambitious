@@ -7,6 +7,7 @@
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0;
 }
 
 /* Site Branding */
@@ -17,6 +18,8 @@
 	max-width: 100%;
 	flex-direction: column;
 	justify-content: center;
+	flex-basis: auto;
+	flex-grow: 0;
 }
 
 .site-branding a:link,

@@ -1,6 +1,13 @@
 .primary-navigation {
 	position: relative;
 	width: 100%;
+	flex-basis: auto;
+	flex-grow: 0;
+}
+
+/* Override Core Column Block CSS */
+.primary-navigation.wp-block-column:nth-child(n) {
+	margin-left: 0;
 }
 
 .main-navigation ul {
