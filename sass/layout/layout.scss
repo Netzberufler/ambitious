@@ -1,4 +1,4 @@
-.site {
+.wp-site-blocks {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -8,17 +8,13 @@
 
 .site-header,
 .site-content,
-.footer-main {
+.site-footer {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
 
-.header-main,
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.site-main {
 	max-width: $contentWidth;
 }

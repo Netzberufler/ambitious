@@ -1,7 +1,7 @@
 @media only screen and (min-width: 480px) {
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -57,7 +57,7 @@
 @media only screen and (min-width: 640px) {
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 1.75rem;
 		padding-right: 1.75rem;
 	}
@@ -114,7 +114,7 @@
 
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -177,7 +177,7 @@
 @media only screen and (min-width: 1280px) {
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 2.25rem;
 		padding-right: 2.25rem;
 	}
@@ -191,7 +191,7 @@
 	.site-footer {
 		padding-top: 4rem;
 	}
-	
+
 	.type-post,
 	.type-page,
 	.type-attachment,
@@ -201,7 +201,7 @@
 
 	.entry-header,
 	.post-image {
-    	margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	/* Footer Widgets */
@@ -209,7 +209,7 @@
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
-	
+
 	.footer-widgets .widget {
 		margin-bottom: 4rem;
 	}
