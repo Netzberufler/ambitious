@@ -33,7 +33,7 @@
 	display: none;
 }
 
-.main-navigation.toggled-on > ul.menu {
+.main-navigation.toggled-on > ul {
 	display: block;
 }
 
@@ -91,10 +91,20 @@
 }
 
 /* Main Navigation Toggle */
+.main-menu-toggle {
+	margin-left: auto;
+	flex-basis: auto !important;
+	flex-grow: 0;
+}
+
+/* Override Core Column Block CSS */
+.main-menu-toggle.wp-block-column:nth-child(n) {
+	margin-left: auto;
+}
+
 .menu-toggle {
 	display: block;
 	margin: 0;
-	margin-left: auto;
 	padding: 1rem;
 	border: none;
 	background: none;
@@ -137,12 +147,12 @@
 	@include fill(--header-text-hover-color);
 }
 
-.toggled-on .menu-toggle .icon-menu,
-.menu-toggle .icon-close {
+.menu-toggle[aria-expanded="true"] .icon-menu,
+.menu-toggle[aria-expanded="false"] .icon-close {
 	display: none;
 }
 
-.toggled-on .menu-toggle .icon-close {
+.menu-toggle[aria-expanded="true"] .icon-close {
 	display: inline-block;
 }
 

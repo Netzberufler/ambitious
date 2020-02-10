@@ -103,15 +103,13 @@ function ambitious_scripts() {
 	wp_enqueue_style( 'ambitious-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 
 	// Register and enqueue navigation.js.
-	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script( 'ambitious-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '1.0', true );
-		$ambitious_l10n = array(
-			'expand'   => esc_html__( 'Expand child menu', 'ambitious' ),
-			'collapse' => esc_html__( 'Collapse child menu', 'ambitious' ),
-			'icon'     => ambitious_get_svg( 'expand' ),
-		);
-		wp_localize_script( 'ambitious-navigation', 'AmbitiousScreenReaderText', $ambitious_l10n );
-	}
+	wp_enqueue_script( 'ambitious-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
+	$ambitious_l10n = array(
+		'expand'   => esc_html__( 'Expand child menu', 'ambitious' ),
+		'collapse' => esc_html__( 'Collapse child menu', 'ambitious' ),
+		'icon'     => ambitious_get_svg( 'expand' ),
+	);
+	wp_localize_script( 'ambitious-navigation', 'AmbitiousScreenReaderText', $ambitious_l10n );
 
 	// Enqueue svgxuse to support external SVG Sprites in Internet Explorer.
 	wp_enqueue_script( 'svgxuse', get_theme_file_uri( '/assets/js/svgxuse.min.js' ), array(), '1.2.4' );

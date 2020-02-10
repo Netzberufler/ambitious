@@ -43,10 +43,10 @@
 
 	initMainNavigation( $( '.main-navigation' ) );
 
-	masthead       = $( '#masthead' );
+	masthead       = $( '.wp-site-blocks > .site-header' );
 	menuToggle     = masthead.find( '.menu-toggle' );
 	siteNavContain = masthead.find( '.main-navigation' );
-	siteNavigation = masthead.find( '.main-navigation > ul.menu' );
+	siteNavigation = masthead.find( '.main-navigation > ul' );
 
 	// Enable menuToggle.
 	(function() {
