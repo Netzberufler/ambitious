@@ -879,9 +879,13 @@ textarea {
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
-.main-navigation ul a:focus {
+.main-navigation ul a:focus,
+.main-navigation.wp-block-navigation > ul > li > ul a:hover,
+.main-navigation.wp-block-navigation > ul > li > ul a:active,
+.main-navigation.wp-block-navigation > ul > li > ul a:focus {
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-text-hover-color);
+	text-decoration: none;
 }
 
 .main-navigation ul li.current-menu-item > a {
@@ -2144,7 +2148,7 @@ object {
 	}
 
 	.main-navigation ul,
-	.main-navigation ul ul {
+	.main-navigation.wp-block-navigation > ul > li > ul {
 		display: block;
 	}
 
@@ -2187,23 +2191,35 @@ object {
 	}
 
 	/* Dropdown Menus */
-	.main-navigation ul ul {
+	.main-navigation.wp-block-navigation > ul > li > ul {
 		position: absolute;
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem;
+		background-color: #003344;
+		background-color: var(--header-background-color);
 		border: 2px solid rgba(255, 255, 255, 0.1);
 		border: 2px solid var(--header-border-color);
+		border-radius: 0;
+		min-width: auto;
+		transition: none;
+		transform: none;
+		opacity: 1;
 	}
 
-	.main-navigation ul ul li:hover > ul,
-	.main-navigation ul ul li.focus > ul {
+	.main-navigation.wp-block-navigation > ul > li > ul::before,
+	.main-navigation.wp-block-navigation > ul > li > ul::after {
+		display: none;
+	}
+
+	.main-navigation.wp-block-navigation > ul > li > ul li:hover > ul,
+	.main-navigation.wp-block-navigation > ul > li > ul li.focus > ul {
 		right: 100%;
 		left: auto;
 	}
 
-	.main-navigation ul ul a {
+	.main-navigation.wp-block-navigation > ul > li > ul a {
 		width: 16rem;
 	}
 
@@ -2213,15 +2229,15 @@ object {
 		left: auto;
 	}
 
-	.main-navigation ul ul ul {
+	.main-navigation.wp-block-navigation > ul > li > ul ul {
 		left: -999em;
 		margin-top: -1px;
 		top: 0;
 	}
 
-	.main-navigation ul ul a,
-	.main-navigation ul ul ul a,
-	.main-navigation ul ul ul ul a {
+	.main-navigation.wp-block-navigation > ul > li > ul a,
+	.main-navigation.wp-block-navigation > ul > li > ul ul a,
+	.main-navigation.wp-block-navigation > ul > li > ul ul ul a {
 		padding: 1rem;
 		border: none;
 	}
@@ -2245,8 +2261,8 @@ object {
 		fill: var(--header-text-hover-color);
 	}
 
-	.main-navigation ul ul .menu-item-has-children > a > .icon,
-	.main-navigation ul ul .page_item_has_children > a > .icon {
+	.main-navigation.wp-block-navigation > ul > li > ul .menu-item-has-children > a > .icon,
+	.main-navigation.wp-block-navigation > ul > li > ul .page_item_has_children > a > .icon {
 		position: absolute;
 		left: auto;
 		right: 1em;

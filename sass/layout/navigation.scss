@@ -60,8 +60,12 @@
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
-.main-navigation ul a:focus {
+.main-navigation ul a:focus,
+.main-navigation.wp-block-navigation > ul > li > ul a:hover,
+.main-navigation.wp-block-navigation > ul > li > ul a:active,
+.main-navigation.wp-block-navigation > ul > li > ul a:focus {
 	@include color(--header-text-hover-color);
+	text-decoration: none;
 }
 
 .main-navigation ul li.current-menu-item > a {
