@@ -734,7 +734,7 @@ textarea {
 	max-width: 100%;
 	flex-direction: column;
 	justify-content: center;
-	flex-basis: auto;
+	flex-basis: auto !important;
 	flex-grow: 0;
 }
 
@@ -814,7 +814,7 @@ textarea {
 .primary-navigation {
 	position: relative;
 	width: 100%;
-	flex-basis: auto;
+	flex-basis: auto !important;
 	flex-grow: 0;
 }
 
@@ -2150,7 +2150,7 @@ object {
 		margin-left: auto;
 	}
 
-	#masthead .main-navigation > ul.menu {
+	.site-header .main-navigation > ul {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
