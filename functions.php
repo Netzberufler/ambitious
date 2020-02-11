@@ -123,6 +123,27 @@ add_action( 'wp_enqueue_scripts', 'ambitious_scripts' );
 
 
 /**
+ * Return SVG markup.
+ *
+ * @param string $icon SVG icon id.
+ * @return string $svg SVG markup.
+ */
+function ambitious_get_svg( $icon = null ) {
+	// Return early if no icon was defined.
+	if ( empty( $icon ) ) {
+		return;
+	}
+
+	// Create SVG markup.
+	$svg  = '<svg class="icon icon-' . esc_attr( $icon ) . '" aria-hidden="true" role="img">';
+	$svg .= ' <use xlink:href="' . get_parent_theme_file_uri( '/assets/icons/genericons-neue.svg#' ) . esc_html( $icon ) . '"></use> ';
+	$svg .= '</svg>';
+
+	return $svg;
+}
+
+
+/**
  * Register widget areas and custom widgets.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
@@ -317,17 +338,3 @@ function ambitious_block_editor_settings( $editor_settings ) {
 	return $editor_settings;
 }
 add_filter( 'block_editor_settings', 'ambitious_block_editor_settings', 11 );
-
-
-/**
- * Include Files
- */
-
-// Include SVG Icon Functions.
-require get_template_directory() . '/inc/icons.php';
-
-// Include Template Functions.
-require get_template_directory() . '/inc/template-functions.php';
-
-// Include Template Tags.
-require get_template_directory() . '/inc/template-tags.php';
