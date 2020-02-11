@@ -19,7 +19,9 @@
 	margin-bottom: 1rem;
 }
 
-.entry-title {
+.entry-title,
+.type-post > .wp-block-group__inner-container > h1,
+.type-page > .wp-block-group__inner-container > h1 {
 	margin: 0;
 	padding: 0;
 	@include color(--title-color);

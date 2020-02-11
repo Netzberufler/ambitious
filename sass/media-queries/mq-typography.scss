@@ -7,7 +7,9 @@
 		@include font-size(14);
 	}
 
-	.entry-title {
+	.entry-title,
+	.type-post > .wp-block-group__inner-container > h1,
+	.type-page > .wp-block-group__inner-container > h1 {
 		@include font-size(32);
 	}
 
@@ -28,7 +30,9 @@
 }
 
 @media only screen and (min-width: 960px) {
-	.entry-title {
+	.entry-title,
+	.type-post > .wp-block-group__inner-container > h1,
+	.type-page > .wp-block-group__inner-container > h1 {
 		@include font-size(40);
 	}
 
@@ -48,7 +52,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
-	.entry-title {
+	.entry-title,
+	.type-post > .wp-block-group__inner-container > h1,
+	.type-page > .wp-block-group__inner-container > h1 {
 		@include font-size(48);
 	}
 
