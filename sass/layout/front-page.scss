@@ -1,0 +1,15 @@
+.site-content.front-page {
+	padding-top: 0;
+}
+
+.front-page .front-page-intro {
+	margin-left: calc(-100vw / 2 + 100% / 2);
+	margin-right: calc(-100vw / 2 + 100% / 2);
+	max-width: 100vw;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	.intro-heading {
+		margin-top: 0;
+	}
+}
