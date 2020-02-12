@@ -118,6 +118,16 @@ add_action( 'wp_enqueue_scripts', 'ambitious_scripts' );
 
 
 /**
+* Enqueue theme fonts.
+*/
+function ambitious_theme_fonts() {
+	wp_enqueue_style( 'ambitious-theme-fonts', get_template_directory_uri() . '/assets/css/theme-fonts.css', array(), '20200212' );
+}
+add_action( 'wp_enqueue_scripts', 'ambitious_theme_fonts', 1 );
+add_action( 'enqueue_block_editor_assets', 'ambitious_theme_fonts', 1 );
+
+
+/**
  * Return SVG markup.
  *
  * @param string $icon SVG icon id.

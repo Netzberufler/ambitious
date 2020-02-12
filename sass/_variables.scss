@@ -39,8 +39,8 @@ $themeColors: (
 );
 
 // Theme Fonts
-$baseFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$titleFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$baseFont: "Barlow", arial, helvetica, sans-serif;
+$titleFont: "Barlow", arial, helvetica, sans-serif;
 $themeFonts: (
 	--text-font  : $baseFont,
 	--title-font : $titleFont,
