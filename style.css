@@ -1351,6 +1351,13 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	margin-top: 0;
 }
 
+.front-page .front-page-intro .wp-block-button a:hover,
+.front-page .front-page-intro .wp-block-button a:active {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--header-text-hover-color);
+	text-decoration: none;
+}
+
 @media only screen and (min-width: 480px) {
 	.front-page .front-page-intro {
 		padding: 2rem 1.5rem;

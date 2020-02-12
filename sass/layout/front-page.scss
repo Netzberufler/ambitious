@@ -18,6 +18,12 @@
 	.intro-heading {
 		margin-top: 0;
 	}
+
+	.wp-block-button a:hover,
+	.wp-block-button a:active {
+		@include color(--header-text-hover-color);
+		text-decoration: none;
+	}
 }
 
 @media only screen and (min-width: 480px) {
