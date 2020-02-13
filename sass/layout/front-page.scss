@@ -19,6 +19,11 @@
 		margin-top: 0;
 	}
 
+	.wp-block-button a:link,
+	.wp-block-button a:visited {
+		color: #fff;
+	}
+
 	.wp-block-button a:hover,
 	.wp-block-button a:active {
 		@include color(--header-text-hover-color);

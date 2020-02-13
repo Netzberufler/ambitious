@@ -1212,6 +1212,11 @@ textarea {
 	margin-top: 0;
 }
 
+.front-page .front-page-intro .wp-block-button a:link,
+.front-page .front-page-intro .wp-block-button a:visited {
+	color: #fff;
+}
+
 .front-page .front-page-intro .wp-block-button a:hover,
 .front-page .front-page-intro .wp-block-button a:active {
 	color: rgba(255, 255, 255, 0.5);
