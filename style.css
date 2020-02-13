@@ -871,6 +871,19 @@ textarea {
 	text-decoration: none;
 }
 
+/* Override Navigation Block Core Styling */
+.main-navigation.wp-block-navigation .wp-block-navigation-link {
+	display: block;
+	min-height: auto;
+	line-height: inherit;
+}
+
+.main-navigation.wp-block-navigation .wp-block-navigation-link .wp-block-navigation-link__content {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+}
+
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
 	color: rgba(255, 255, 255, 0.95);
