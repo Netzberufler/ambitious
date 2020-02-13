@@ -65,6 +65,6 @@
 	display: block;
 	margin: 0;
 	padding: 0;
-	@include color(--header-text-color);
+	@include color(--header-text-hover-color);
 	@include font-size(13);
 }

@@ -789,8 +789,8 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 0;
-	color: rgba(255, 255, 255, 0.95);
-	color: var(--header-text-color);
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--header-text-hover-color);
 	font-size: 13px;
 	font-size: 0.8125rem;
 }
@@ -1774,6 +1774,11 @@ object {
 }
 
 @media only screen and (min-width: 960px) {
+	.site-description {
+		font-size: 15px;
+		font-size: 0.9375rem;
+	}
+
 	.entry-title,
 	.type-post > .wp-block-group__inner-container > h1,
 	.type-page > .wp-block-group__inner-container > h1 {
@@ -1800,6 +1805,11 @@ object {
 }
 
 @media only screen and (min-width: 1280px) {
+	.site-description {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
 	.entry-title,
 	.type-post > .wp-block-group__inner-container > h1,
 	.type-page > .wp-block-group__inner-container > h1 {

@@ -30,6 +30,10 @@
 }
 
 @media only screen and (min-width: 960px) {
+	.site-description {
+		@include font-size(15);
+	}
+
 	.entry-title,
 	.type-post > .wp-block-group__inner-container > h1,
 	.type-page > .wp-block-group__inner-container > h1 {
@@ -52,6 +56,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+	.site-description {
+		@include font-size(16);
+	}
+
 	.entry-title,
 	.type-post > .wp-block-group__inner-container > h1,
 	.type-page > .wp-block-group__inner-container > h1 {
