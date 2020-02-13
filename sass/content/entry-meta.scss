@@ -1,21 +1,25 @@
 .entry-meta {
-	margin: 0.35rem 0 0;
-	color: rgba(0,0,0,0.5);
+	margin: 1em 0 2em;
+	color: rgba(0, 0, 0, 0.5);
 	@include font-size(14);
+
+	address {
+		display: inline-block;
+		margin: 0;
+	}
+
+	time {
+		display: inline-block;
+	}
+
+	address::after {
+		display: inline-block;
+		margin: 0 1rem;
+		color: rgba(0, 0, 0, 0.5);
+		content: "\2013";
+	}
 }
 
 .entry-meta .updated:not(.published) {
 	display: none;
-}
-
-/* Hide post meta if they are deactivated in settings */
-body.date-hidden .type-post .entry-meta .posted-on,
-body.author-hidden .type-post .entry-meta .posted-by,
-body.categories-hidden .type-post .posted-in,
-body.tags-hidden.single-post .type-post .entry-tags {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	width: 1px;
-	height: 1px;
 }
