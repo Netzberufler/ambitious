@@ -93,11 +93,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "layout/navigation";
 
 /*--------------------------------------------------------------
-# - Sidebar
---------------------------------------------------------------*/
-@import "layout/sidebar";
-
-/*--------------------------------------------------------------
 # - Posts and pages
 --------------------------------------------------------------*/
 @import "content/content";
@@ -126,7 +121,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - Blocks
 --------------------------------------------------------------*/
 @import "blocks/core-blocks";
-@import "blocks/gt-blocks";
 @import "blocks/colors";
 @import "blocks/font-sizes";
 
@@ -153,8 +147,3 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ## - Media Queries for Media
 --------------------------------------------------------------*/
 @import "media-queries/mq-media";
-
-/*--------------------------------------------------------------
-# - Theme Options
---------------------------------------------------------------*/
-@import "content/theme-options";

@@ -68,17 +68,3 @@
 	@include color(--header-text-color);
 	@include font-size(13);
 }
-
-/* Custom Header Image */
-.header-image {
-	margin: 0;
-	text-align: center;
-}
-
-.header-image img,
-.header-image .wp-post-image {
-	margin: 0;
-	width: 100%;
-	height: auto;
-	vertical-align: top;
-}

@@ -43,27 +43,14 @@
 # - Layout
 --------------------------------------------------------------*/
 .editor-styles-wrapper .wp-block {
-	max-width: calc( 800px + 30px);
+	max-width: calc(800px + 30px);
 }
 
 .editor-styles-wrapper .wp-block[data-align=wide] {
-	max-width: calc( 1040px + 30px);
+	max-width: calc(1040px + 30px);
 }
 
 .editor-styles-wrapper .wp-block[data-align=full] {
-	max-width: none;
-}
-
-/* Fullwidth Template */
-.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block {
-	max-width: calc( 1280px + 30px);
-}
-
-.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=wide] {
-	max-width: calc( 1520px + 30px);
-}
-
-.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=full] {
 	max-width: none;
 }
 
@@ -99,14 +86,6 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 		font-size: 48px;
 		font-size: 3rem;
 	}
-}
-
-/* Hidden Page Title */
-body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-post-title {
-	background-color: #fff;
-	background-image: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd), linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
-	background-size: 20px 20px;
-	background-position: 0 0, 10px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -254,7 +233,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 1rem;
 }
 
-.editor-styles-wrapper blockquote cite:before {
+.editor-styles-wrapper blockquote cite::before {
 	content: "\2014\00a0";
 }
 
@@ -365,7 +344,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
 
@@ -395,7 +374,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
 
@@ -424,19 +403,6 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .wp-block-pullquote.is-style-solid-color blockquote cite {
 	color: inherit;
-}
-
-/* GT Section Block */
-.gt-background-section .gt-section-content.gt-default-width {
-	max-width: 800px;
-}
-
-.gt-background-section .gt-section-content.gt-wide-width {
-	max-width: 1040px;
-}
-
-.gt-background-section .gt-section-content.gt-full-width {
-	max-width: 1280px;
 }
 
 /* Cover Block */
@@ -487,12 +453,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	text-transform: none;
 }
 
-.wp-block-quote cite:before,
-.wp-block-quote footer:before,
-.wp-block-quote__citation:before,
-.wp-block-pullquote cite:before,
-.wp-block-pullquote footer:before,
-.wp-block-pullquote__citation:before {
+.wp-block-quote cite::before,
+.wp-block-quote footer::before,
+.wp-block-quote__citation::before,
+.wp-block-pullquote cite::before,
+.wp-block-pullquote footer::before,
+.wp-block-pullquote__citation::before {
 	content: "\2014\00a0";
 }
 
@@ -502,19 +468,6 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
 	color: inherit;
-}
-
-/* GT Section Block */
-.gt-background-section .gt-section-content.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc( 800px + 30px);
-}
-
-.gt-background-section .gt-section-content.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc( 1040px + 30px);
-}
-
-.gt-background-section .gt-section-content.gt-full-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc( 1280px + 30px);
 }
 
 /*--------------------------------------------------------------
@@ -543,7 +496,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-white-color {
-	color: #ffffff;
+	color: #fff;
 }
 
 .has-light-gray-color {
@@ -562,7 +515,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-black-color {
-	color: #000000;
+	color: #000;
 }
 
 /* Block Background Colors */
@@ -587,7 +540,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-white-background-color {
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .has-light-gray-background-color {
@@ -606,7 +559,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 .has-black-background-color {
-	background-color: #000000;
+	background-color: #000;
 }
 
 /*--------------------------------------------------------------

@@ -21,7 +21,7 @@ object {
 	margin-bottom: 1em;
 	max-width: 100%;
 	@include font-size(15);
-	color: rgba(0,0,0,0.6);
+	color: rgba(0, 0, 0, 0.6);
 	width: auto !important;
 }
 
@@ -68,7 +68,6 @@ object {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
 	text-align: center;
 }
 
@@ -80,7 +79,7 @@ object {
 	display: block;
 	margin: 0.5rem 0 0;
 	@include font-size(15);
-	color: rgba(0,0,0,0.6);
+	color: rgba(0, 0, 0, 0.6);
 	line-height: 1.4;
 }
 

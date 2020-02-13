@@ -52,8 +52,8 @@
 
 .entry-content > .alignwide,
 .entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2 );
-	margin-right: calc( -100vw / 2 + 100% / 2 );
+	margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
+	margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 	max-width: 100vw;
 }
 

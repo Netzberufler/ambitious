@@ -8,7 +8,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Preformatted Block */
 .wp-block-preformatted pre {
-    white-space: normal;
+	white-space: normal;
 }
 
 /* Separator Block */
@@ -28,7 +28,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 }
 
 /* Quote Block */
-.wp-block-quote:not(.is-large):not(.is-style-large){
+.wp-block-quote:not(.is-large):not(.is-style-large) {
 	padding-left: 1.5em;
 	border-left: 4px solid $textColor;
 }
@@ -44,12 +44,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	text-transform: none;
 }
 
-.wp-block-quote cite:before,
-.wp-block-quote footer:before,
-.wp-block-quote__citation:before,
-.wp-block-pullquote cite:before,
-.wp-block-pullquote footer:before,
-.wp-block-pullquote__citation:before {
+.wp-block-quote cite::before,
+.wp-block-quote footer::before,
+.wp-block-quote__citation::before,
+.wp-block-pullquote cite::before,
+.wp-block-pullquote footer::before,
+.wp-block-pullquote__citation::before {
 	content: "\2014\00a0";
 }
 
@@ -59,19 +59,4 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
 	color: inherit;
-}
-
-/* GT Section Block */
-.gt-background-section .gt-section-content {
-	&.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-		max-width: calc( #{$contentWidth} + 30px );
-	}
-
-	&.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-		max-width: calc( #{$wideBlockWidth} + 30px );
-	}
-
-	&.gt-full-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-		max-width: calc( #{$contentFullwidth} + 30px );
-	}
 }
