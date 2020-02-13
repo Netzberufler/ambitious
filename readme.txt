@@ -1,51 +1,21 @@
 === Ambitious ===
-Author URI: https://germanthemes.de/en/
-Theme URI: https://germanthemes.de/en/themes/ambitious/
-Contributors: germanthemes
+Author URI: https://netzberufler.de
+Theme URI: https://github.com/Netzberufler/ambitious
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
 Requires at least: 5.2
 Tested up to: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Ambitious is a modern Business WordPress Theme.
+Ambitious is an experimental block-based WordPress Theme.
 
 == Description ==
 
-Ambitious is a modern Business WordPress Theme created with the new WordPress Block Editor in mind. The theme comes with Customizer options for colors and typography and a widgetized footer area. It is lightweight, GDPR-ready and works best in combination with our free GT Blocks plugin.
-
-For more information about Ambitious please go to https://germanthemes.de/themes/ambitious/
-
-== Installation ==
-
-1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Click on the 'Upload Theme' button to upload the ZIP-file of the theme.
-3. Go to https://germanthemes.de/en/docs/ambitious-documentation/ for a guide on how to use and customize this theme.
-
-== Changelog ==
-
-= 1.1 - 2019-12-11 =
-* added Blog Settings section to Customizer
-* implemented post meta options
-* added Blog Sidebar widget area
-* improved styling of comments section
-
-= 1.0.3 - 2019-11-14 =
-* added Theme Info section in Customizer
-* improved loading of custom fonts for typography settings in Customizer preview
-
-= 1.0.2 - 2019-11-08 =
-* fixed Theme Sniffer issues
-
-= 1.0.1 - 2019-10-30 =
-* fixed position of header image on very large screens
-
-= 1.0 - 2019-08-05 =
-* First Release
+Ambitious is an experimental block-based WordPress Theme. Open your Browser DevTools to see the header, navigation, content and footer made out of Gutenberg blocks entirely.
 
 == Copyright ==
 
-Ambitious WordPress Theme, Copyright 2019 GermanThemes.de
+Ambitious WordPress Theme, Copyright 2020 GermanThemes.de
 Ambitious is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -60,7 +30,7 @@ GNU General Public License for more details.
 
 == Ressources ==
 
-Ambitious bundles the following third-party resources:
+Ambitious bundles and uses the following third-party resources:
 
 1. Genericons Neue - https://github.com/Automattic/genericons-neue
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
@@ -74,6 +44,6 @@ Copyright: 2012-2015 Automattic, Inc., https://automattic.com/
 License: Distributed under the terms of the MIT License (http://opensource.org/licenses/MIT)
 Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 
-4. svgxuse - https://github.com/Keyamoon/svgxuse
-License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
-Copyright: 2017 IcoMoon.io
+4. Barlow Font - https://fonts.google.com/specimen/Barlow
+License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
+Copyright: Jeremy Tribby
