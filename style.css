@@ -1357,6 +1357,10 @@ textarea {
 	text-decoration: none;
 }
 
+.footer-widgets .footer-column .wp-block-latest-posts.wp-block-latest-posts__list {
+	list-style: disc;
+}
+
 /* Footer Copyright */
 .footer-copyright {
 	margin-bottom: 1.25rem;
