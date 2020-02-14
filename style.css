@@ -991,6 +991,10 @@ textarea {
 	margin-bottom: 1rem;
 }
 
+.type-post .entry-header {
+	margin-bottom: 0.75em;
+}
+
 .entry-title,
 .entry-header h1 {
 	margin: 0;
@@ -1048,7 +1052,7 @@ textarea {
 }
 
 .entry-meta {
-	margin: 1em 0 2em;
+	margin: 0 0 2em;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 14px;
 	font-size: 0.875rem;
