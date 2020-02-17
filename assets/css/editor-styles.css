@@ -8,7 +8,7 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #003344;
+	--primary-color: #034;
 	--secondary-color: #268f97;
 	--accent-color: #c9493b;
 	--highlight-color: #f9d26e;
@@ -16,16 +16,16 @@
 	--gray-color: #848484;
 	--dark-gray-color: #242424;
 	--link-color: #268f97;
-	--link-hover-color: #003344;
-	--button-color: #268f97;
-	--button-hover-color: #003344;
-	--header-background-color: #003344;
+	--link-hover-color: #034;
+	--button-color: #034;
+	--button-hover-color: #268f97;
+	--header-background-color: #034;
 	--header-text-color: rgba(255, 255, 255, 0.95);
 	--header-text-hover-color: rgba(255, 255, 255, 0.5);
 	--header-border-color: rgba(255, 255, 255, 0.1);
-	--title-color: #003344;
+	--title-color: #034;
 	--title-hover-color: #268f97;
-	--footer-background-color: #003344;
+	--footer-background-color: #034;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
@@ -476,7 +476,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #003344;
+	color: #034;
 	color: var(--primary-color);
 }
 
@@ -520,7 +520,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #003344;
+	background-color: #034;
 	background-color: var(--primary-color);
 }
 

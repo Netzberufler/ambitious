@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #003344;
+	--primary-color: #034;
 	--secondary-color: #268f97;
 	--accent-color: #c9493b;
 	--highlight-color: #f9d26e;
@@ -52,16 +52,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--gray-color: #848484;
 	--dark-gray-color: #242424;
 	--link-color: #268f97;
-	--link-hover-color: #003344;
-	--button-color: #268f97;
-	--button-hover-color: #003344;
-	--header-background-color: #003344;
+	--link-hover-color: #034;
+	--button-color: #034;
+	--button-hover-color: #268f97;
+	--header-background-color: #034;
 	--header-text-color: rgba(255, 255, 255, 0.95);
 	--header-text-hover-color: rgba(255, 255, 255, 0.5);
 	--header-border-color: rgba(255, 255, 255, 0.1);
-	--title-color: #003344;
+	--title-color: #034;
 	--title-hover-color: #268f97;
-	--footer-background-color: #003344;
+	--footer-background-color: #034;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
@@ -519,7 +519,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #003344;
+	color: #034;
 	color: var(--link-hover-color);
 	text-decoration: none;
 }
@@ -543,7 +543,7 @@ input[type="submit"] {
 	margin: 0;
 	padding: 0.6em 1.2em;
 	background: none;
-	color: #268f97;
+	color: #034;
 	color: var(--button-color);
 	border: 2px solid currentColor;
 	text-decoration: none;
@@ -564,7 +564,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	color: #003344;
+	color: #268f97;
 	color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -715,7 +715,7 @@ textarea {
 # - Header
 --------------------------------------------------------------*/
 .site-header {
-	background-color: #003344;
+	background-color: #034;
 	background-color: var(--header-background-color);
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
@@ -999,7 +999,7 @@ textarea {
 .entry-header h1 {
 	margin: 0;
 	padding: 0;
-	color: #003344;
+	color: #034;
 	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
@@ -1016,7 +1016,7 @@ textarea {
 
 .entry-title a:link,
 .entry-title a:visited {
-	color: #003344;
+	color: #034;
 	color: var(--title-color);
 	text-decoration: none;
 }
@@ -1082,7 +1082,7 @@ textarea {
 .more-link {
 	display: inline-block;
 	padding: 0.6em 1.2em;
-	color: #268f97;
+	color: #034;
 	color: var(--button-color);
 	border: 2px solid currentColor;
 	font-size: 14px;
@@ -1092,14 +1092,14 @@ textarea {
 
 .more-link:link,
 .more-link:visited {
-	color: #268f97;
+	color: #034;
 	color: var(--button-color);
 	text-decoration: none;
 }
 
 .more-link:hover,
 .more-link:active {
-	color: #003344;
+	color: #268f97;
 	color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -1120,7 +1120,7 @@ textarea {
 	padding: 0.3em 0.9em;
 	text-align: center;
 	text-decoration: none;
-	color: #268f97;
+	color: #034;
 	color: var(--button-color);
 	border: 2px solid currentColor;
 }
@@ -1132,7 +1132,7 @@ textarea {
 .pagination .current,
 .pagination a:hover,
 .pagination a:active {
-	color: #003344;
+	color: #268f97;
 	color: var(--button-hover-color);
 }
 
@@ -1264,7 +1264,7 @@ textarea {
 	font-size: 1.0625rem;
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
-	background-color: #003344;
+	background-color: #034;
 	background-color: var(--footer-background-color);
 }
 
@@ -1634,7 +1634,7 @@ object {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #003344;
+	color: #034;
 	color: var(--primary-color);
 }
 
@@ -1678,7 +1678,7 @@ object {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #003344;
+	background-color: #034;
 	background-color: var(--primary-color);
 }
 
