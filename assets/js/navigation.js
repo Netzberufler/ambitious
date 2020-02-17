@@ -1,4 +1,3 @@
-/* global AmbitiousScreenReaderText */
 /**
  * Theme Navigation
  *
